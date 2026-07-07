@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "GUI",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/radio_telescope/gui.py",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Observe (config.toml)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/radio_telescope/observe.py",
+            "args": ["${workspaceFolder}/config.toml"],
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Capture (one-shot)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/radio_telescope/capture.py",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Viewer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/radio_telescope/viewer.py",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "console": "integratedTerminal"
+        }
+    ]
+}
