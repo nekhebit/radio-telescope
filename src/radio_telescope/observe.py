@@ -9,6 +9,7 @@
 #   poetry run python src/radio_telescope/observe.py              # uses defaults
 #   poetry run python src/radio_telescope/observe.py config.toml  # custom config
 
+import radio_telescope.sdr_compat  # noqa: F401 — must precede any rtlsdr import; patches ctypes to suppress missing symbols
 from rtlsdr.rtlsdr import LibUSBError
 import matplotlib.pyplot as plt
 import sys

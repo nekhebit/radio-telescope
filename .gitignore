@@ -1,3 +1,6 @@
+# photos
+/docs/img/photos
+
 # observation data files
 observations/
 *.fits
@@ -224,3 +227,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+
+.claude/
